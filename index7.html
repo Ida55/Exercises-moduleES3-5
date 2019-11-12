@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base Niveau 1 - Exo 7/11</title>
+    <script>
+
+    /*   o	Créez une 1ère variable. o	Assignez le « tableau » : ["lundi", "mardi", "mercredi", "jeudi", "vendredi"]
+     à cette variable.*/
+        var daysOfWeek = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"];
+            
+    /*   o	Puis, ajoutez les 2 derniers jours de la semaine au « tableau » sans modifier la déclaration initiale. */
+        daysOfWeek[5] = "samedi";
+        daysOfWeek[6] = "dimanche";
+
+    /*  o	Affichez le dernier indice du « tableau » dans une boite de dialogue.  */
+         console.log(alert(daysOfWeek));   
+
+    /*  o	Concaténez la 1ère et la dernière valeur du « tableau » sans oubliez de les séparer par un espace.  */
+        var lastFirstDays = daysOfWeek[0] + ' ' + daysOfWeek[6];
+
+    /*  o	Ajoutez la valeur obtenue au « tableau ».  */
+        daysOfWeek[7] = lastFirstDays;
+
+    /*  o	Affichez dans une boite de dialogue la dernière valeur du « tableau ». */
+        console.log(alert(daysOfWeek[7]));
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
