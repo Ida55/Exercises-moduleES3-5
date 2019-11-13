@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base Niveau 1 - Exo 11/11</title>
+    <script>
+    
+        /* o	Créez 1 fonction qui :
+                •	Concatène un nombre à une chaîne de caractère.
+                •	Retourne la valeur obtenue. 
+
+           o	Exécutez cette fonction et récupérez la valeur de retour dans une variable. */
+                function numText(number, text){
+                    var result = number + " " + text;
+                    return result;
+            }       
+     
+       // o	Affichez la valeur de retour dans une boite de dialogue.
+                alert(numText(40, "petits lapins"));
+          
+       /* o	Reprenez la dernière fonction de l’exercice précédent.
+          o	Supprimez l’instruction au sein de la fonction qui est responsable de l’affichage de la 
+            concaténation dans une boite de dialogue. 
+          o	A la place, la fonction retourne la valeur de la concaténation.  
+            */
+                function randomText([text1, text2]){
+                   var result = [text1] + " " + [text2];
+                   return result;
+                }
+                
+        // o	Affichez la valeur de retour dans une boite de dialogue. 
+                alert(randomText(["Quarante", "petits lapins"]));
+               
+        /*  */
+
+                
+
+
+    </script>
+</head>
+<body >
+   
+</body>
+</html>
+
