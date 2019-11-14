@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base Niveau 2 - Exo 4/8</title>
+    <script>
+    
+        /* • Au CHARGEMENT du document, le navigateur Internet affiche une boite de dialogue contenant le 
+             message « Voulez-vous continuer ? ». TANT QUE l'utilisateur clique sur « OK », le navigateur 
+             Internet affiche une boite de dialogue contenant le message « Voulez-vous continuer ? ».
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onload, les mots-clés function 
+             et while, les fonctions confirm et alert. */
+
+                function userChoice(){
+                    var message = confirm("Voulez-vous continuer ?");
+
+                    while(message){
+                        alert("Voulez-vous toujours continuer ?");
+                    }
+                }
+            
+    </script>
+</head>
+<body onload="userChoice()">
+
+</body>
+</html>
+
