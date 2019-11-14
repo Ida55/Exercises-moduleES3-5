@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base Niveau 2 - Exo 1/8</title>
+    <script>
+    
+        /* •	Créez une 1ère variable. 
+           •	Assignez une valeur numérique de votre choix à cette variable. 
+           •	Créer une 2ème variable.
+           •	Utilisez l’opérateur de comparaison >= pour obtenir un booléen en comparant la valeur de 
+            la 1ère variable avec le nombre 10. */
+                var num1 = 5 >= 10;
+                var num2 = num1;
+     
+       /* •	Utilisez la 2ème variable avec le mot-clé if et le mot-clé else pour écrire un bloc conditionnel 
+            qui affiche le texte Entrée dans une boite de dialogue si if reçoit true et qui affiche le texte 
+            Sortie sinon. 
+          •	Modifiez la valeur de la 1ère variable pour tester les 2 cas possibles. */
+                    if(num2){
+                      alert("Entrée");
+                    } else {
+                      alert("Sortie");
+                    }          
+
+       /* •	Reprenez le code précédent à l’exception de la 1ère variable. 
+          •	Mettez ce code dans une fonction avec 1 argument. Maintenant, c’est l’argument de la fonction 
+            qui doit être utilisé avec l’opérateur de comparaison et la valeur 10. 
+          •	Exécutez plusieurs fois la fonction en fournissant des paramètres de telle sorte que vous 
+            puissiez tester tous les cas possibles. */
+                    function letsCheck(value){
+                      if(value){
+                      alert("Entrée");
+                    } else {
+                      alert("Sortie");
+                    }   
+                  }
+
+                  console.log(letsCheck(5 <= 10));                   
+    </script>
+</head>
+<body >
+   
+</body>
+</html>
+
