@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base Niveau 2 - Exo 3/8</title>
+    <script>
+    
+        /* • Au CHARGEMENT du document, le navigateur Internet affiche une boite de dialogue contenant le 
+             message « Voulez-vous continuer ? ». SI l'utilisateur clique sur « OK », le navigateur Internet 
+             affiche une boite de dialogue avec le message « Vous avez cliqué sur OK ! » SINON le navigateur 
+             Internet affiche une boite de dialogue avec le message « Vous avez choisi d'annuler ».
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onload, les mots-clés function, 
+             if et else, les fonctions confirm et alert. */
+
+                function userChoice(){
+                    var message = confirm("voulez-vous continuer ?");
+
+                    if(message){
+                        alert("Vous avez cliqué sur OK !")
+                    } else {
+                        alert("Vous avez choisi d'annuler")
+                    }
+                }
+
+        /* • Quand l'utilisateur CLIQUE sur le premier paragraphe, le navigateur Internet affiche une boite de 
+             dialogue contenant le message « Voulez-vous continuer ? ». 
+             SI l'utilisateur clique sur « OK », j'affiche une boite de dialogue avec le message 
+             « Vous avez cliqué sur OK ! ». SINON le navigateur Internet affiche une boite de dialogue avec le 
+             message « Vous avez choisi d'annuler ».
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onclick, les mots-clés function,
+             if et else, les fonctions confirm et alert. */
+
+                function userChoice2(){
+                        var message = confirm("voulez-vous continuer ?");
+
+                        if(message){
+                            alert("Bienvenue !")
+                        } else {
+                            alert("A la prochaine, peut être.")
+                        }
+                }
+
+        /* • Quand l'utilisateur SURVOLE le premier titre, le navigateur Internet affiche une boite de 
+             dialogue contenant le message « Voulez-vous continuer ? ». SI l'utilisateur clique sur OK, 
+             le navigateur Internet affiche une boite de dialogue avec le message « Vous avez cliqué sur OK ! » 
+             SINON le navigateur Internet affiche une boite de dialogue avec le message « Vous avez choisi d'annuler ».
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onmouseover, les mots-clés function, if et 
+             else, les fonctions confirm et alert. */
+
+             function userChoice3(){
+                        var message = confirm("Would you like to go further?");
+
+                        if(message){
+                            alert("You clicked on OK ! That's great!")
+                        } else {
+                            alert("You've choose to cancel, too bad : |")
+                        }
+                }
+
+    </script>
+</head>
+<body onload="userChoice()">
+   
+    <h1 onmouseover="userChoice3()">WELCOME !</h1>
+    <p onclick="userChoice2()">Clique sur ce message</p>
+
+</body>
+</html>
+
