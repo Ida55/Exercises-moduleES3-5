@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base Niveau 2 - Exo 5/8 (partie 3)</title>
+    <script>
+    
+        /* • Au CHARGEMENT du document, le navigateur Internet affiche une boite de dialogue avec un champ de
+             saisie à l'attention de l’utilisateur. SI l'utilisateur clique sur « Annuler », le navigateur 
+             Internet affiche le message « Vous avez annulé la saisie ». SI l'utilisateur clique sur « OK » 
+             sans rien saisir, le navigateur Internet affiche le message « Vous n'avez rien saisi ». SINON 
+             (si l'utilisateur n'a pas cliqué sur « Annuler » ET n'a pas rien saisi), le navigateur Internet 
+             affiche la saisie de l'utilisateur dans une boite de dialogue.
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onload, les mots-clés function,
+             if et else, les fonctions prompt et alert. */
+             
+             function askUser() {
+                 var message = prompt("Veuillez saisir un message");
+                 
+                 if(message){
+                    alert(message);
+                 } else if(message == false){
+                     alert("Vous n'avez rien saisi");
+                 } else {
+                     alert("Vous avez annulé la saisie");
+                 }
+             }
+
+    </script>
+</head>
+<body onload="askUser()">
+
+</body>
+</html>
+
