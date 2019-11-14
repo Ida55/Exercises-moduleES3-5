@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base Niveau 2 - Exo 2/8 (partie 3)</title>
+    <script>
+    
+        /* • Au CHARGEMENT du document, le navigateur Internet affiche une boite de dialogue contenant 
+             le message « Voulez-vous continuer ? ». SI l'utilisateur clique sur « OK », le navigateur 
+             Internet affiche un message « Vous avez cliqué sur OK » ; SINON rien ne s'affiche.
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onload, les mots-clés function 
+             et if, les fonctions confirm et alert. */
+
+            function firstMessage() {
+                var message = confirm("Voulez-vous continuer ?");
+                
+                if(message){
+                    alert("Vous avez cliqué sur ok");
+                } 
+            }
+
+    </script>
+</head>
+<body onload="firstMessage()">
+   
+
+</body>
+</html>
+
