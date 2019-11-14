@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base Niveau 2 - Exo 2/8 (partie 1 & 2)</title>
+    <script>
+    
+        /* • Lorsque l’utilisateur CLIQUE sur le 1er paragraphe ; une fonction, que vous avez déclaré dans 
+             l'en-tête du document, s'exécute.
+           • Cette fonction doit, elle-même, déclencher la fonction qui affiche une boite de dialogue 
+             contenant le texte « Ceci est un choix » et le boutons « OK » et « Annuler ». */
+                function makeAChoice1(){
+                    confirm("Ceci est un choix");
+                }
+
+        /*  • Lorsque l’utilisateur CLIQUE sur le 2ème paragraphe ; une autre fonction que vous avez, 
+              également, déclaré dans l'en-tête du document, s’exécute.
+            • Cette fonction doit, elle-même, déclencher une fonction qui affichera une boite de dialogue 
+              contenant le texte « Ceci est un choix » ainsi que les boutons « OK » et « Annuler ». 
+            • Assignez la valeur retournée par la fonction affichant la boite de dialogue à une variable.
+            • Affichez la valeur de cette variable dans une boite de dialogue. 
+            • Vous devez utiliser une balise <script>, l’attribut d’événement onclick, le mot-clé function, 
+              les fonctions confirm et alert. */
+                function makeAChoice2(){
+                   var dialogBox = confirm("ceci est un autre choix");
+                   alert(dialogBox);
+                }
+
+    </script>
+</head>
+<body>
+   
+    <p onclick="makeAChoice1()">Cliquez sur ce texte</p>
+    <p onclick="makeAChoice2()">Cliquez sur cet autre texte</p>
+
+</body>
+</html>
+
