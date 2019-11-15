@@ -19,10 +19,46 @@
 
                 alert(message);
             }
-                
+
+        /*  • Au CHARGEMENT du document, le navigateur Internet affiche une boite de dialogue avec un champ 
+              de saisie à l'utilisateur.
+              PUIS, utilisez la fonction parseFloat pour transformer la saisie de l ’utilisateur.
+              PUIS, utilisez la fonction isNaN avec la saisie transformée pour obtenir un booléen 
+              indiquant s’il s’agit d’un nombre ou pas. Affichez ce booléen dans une boite de dialogue.
+            • Vous devez utiliser une balise <script>, l’attribut d’événement onload, le mot-clé function, 
+              les fonctions alert, prompt, parseFloat et isNaN. */
+
+              function changedInput2(){
+
+                var message = parseFloat(prompt("Veuillez saisir un message"));
+
+                alert(isNaN(message));
+              }
+        
+        /*  • Quand l'utilisateur CLIQUE sur le premier paragraphe, le navigateur Internet affiche une boite 
+              de dialogue pour demander à l’utilisateur de saisir un nombre.
+              SI l’utilisateur n'a pas saisi un nombre, le navigateur Internet affiche le message « Vous devez 
+              saisir un nombre » dans une boite de dialogue.
+              SINON, le navigateur Internet affiche le message « Merci d'avoir saisi un nombre ».
+            • Vous devez utiliser une balise <script>, l’attribut d’événement onclick, les mots-clés function, 
+              if, else et les fonctions alert, prompt, parseFloat et isNaN.*/
+
+             function changedInput3(){
+
+                var message = parseFloat(prompt("Veuillez saisir un message"));
+
+                if(isNaN(message)){
+                    alert("Vous devez saisir un nombre");
+                } else {
+                    alert("Merci d'avoir saisi un nombre")
+                }
+             }
+
     </script>
 </head>
-<body onload="changedInput()">
+<body onload="changedInput2()">
+
+    <p onclick="changedInput3()">This is clickable content</p>
 
 </body>
 </html>
