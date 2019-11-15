@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermédiaire - Exo 3/11</title>
+    <script>
+    
+        /* • Au CHARGEMENT du document, le navigateur Internet demande à l'utilisateur de saisir un nombre.
+             TANT QUE il ne l'a pas saisi, le navigateur Internet lui demande de saisir un nombre.
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onload, les mots-clés function,
+             while et les fonctions alert, prompt, parseFloat et isNaN. */
+            
+            function noEscape(){
+                var message = parseFloat(prompt("Veuillez saisir un nombre"));
+
+                while(isNaN(message) || message == ''){
+                    message = prompt("Vous devez saisir un nombre");
+                }
+            }
+             
+    </script>
+</head>
+<body onload="noEscape()">
+
+</body>
+</html>
+
