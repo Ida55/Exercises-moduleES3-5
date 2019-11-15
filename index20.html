@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermédiaire - Exo 1/11</title>
+    <script>
+    
+        /* • Quand l’utilisateur CLIQUE sur le premier paragraphe, le navigateur Internet affiche une boite 
+             de dialogue avec un champ de saisie à l'utilisateur. 
+             TANT QUE l'utilisateur clique sur « Annuler » OU clique sur « OK » sans rien saisir, 
+             le navigateur Internet affiche une boite de dialogue avec un champ de saisie.
+             PUIS, le navigateur Internet affiche encore une boite de dialogue avec un champ de saisie à  
+             l'utilisateur.
+             TANT QUE l'utilisateur clique sur « Annuler » OU clique sur « OK » sans rien saisir, 
+             le navigateur Internet affiche une boite dialogue avec un champ de saisie. L'utilisateur a donc 
+             saisi 2 informations. Vous devez concaténer avec l’opérateur + ces 2 informations.
+             PUIS le navigateur Internet doit afficher le résultat de la concaténation dans une boite de 
+             dialogue. 
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onclick, les mots-clés function, 
+             while, les fonctions alert et prompt. */
+            
+            function addMessages(){
+                var message1 = prompt("Veuillez saisir un message");
+                var message2 = prompt("veuillez saisir un nouveau message");
+        
+                while(message1 == null && message2 == null|| message1 == '' && message2 == ''){
+                    message = prompt("Veuillez saisir un message");
+                }
+                alert(message1 + message2);
+            }
+                
+    </script>
+</head>
+<body>
+
+    <p onclick="addMessages()">Veuillez cliquer sur ce message</p>
+
+</body>
+</html>
+
