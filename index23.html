@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermédiaire - Exo 4/11</title>
+    <script>
+    
+        /* • Au CHARGEMENT du document, le navigateur Internet demande à l'utilisateur de saisir un 1er nombre.
+             TANT QUE il ne l'a pas saisi, le navigateur Internet lui demande de saisir un 1er nombre.
+             PUIS le navigateur Internet demande à l'utilisateur de saisir un 2ème nombre. TANT QUE il ne 
+             l'a pas saisi, le navigateur Internet lui demande de saisir un 2ème nombre.
+             ENFIN, le navigateur Internet affiche dans une boite de dialogue le résultat de la somme du 1er 
+             et du 2ème nombre.
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onload, les mots-clés function, 
+             while et les fonctions alert, prompt, parseFloat et isNaN. */
+
+               function userInput(){
+
+                    var message1 = parseFloat(prompt("Veuillez saisir un 1er nombre"));
+                    
+                    while(isNaN(message1)){
+                        message = prompt("Vous devez saisir un 1er nombre");
+                    }
+
+                    var message2 = parseFloat(prompt("Veuillez saisir un 2ème nombre"));
+
+                    while(isNaN(message2)){
+                        message = prompt("Vous devez saisir un 2ème  nombre");
+                    }
+
+                    alert(message1 + message2);
+               }
+         
+    </script>
+</head>
+<body onload="userInput()">
+
+</body>
+</html>
+
