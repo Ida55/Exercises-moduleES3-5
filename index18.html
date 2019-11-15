@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base Niveau 2 - Exo 7/8</title>
+    <script>
+    
+        /* • Au CHARGEMENT du document, initialisez un compteur à 0. TANT QUE la valeur du compteur n’a pas 
+             atteint la valeur -5, le navigateur Internet affiche dans une boite de dialogue la valeur 
+             courante du compteur. Le navigateur Internet affichera donc successivement les valeurs que 
+             prend le compteur.
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onload, les mots-clés function, 
+             while, la fonction alert. */
+
+            var counter = 0
+
+            function counting(){
+                    while(counter <= 5) {
+                    alert(counter++)
+                }
+            }
+
+        /*  • Au CHARGEMENT du document, initialisez un « tableau » contenant 7 valeurs de votre choix. Créez 
+              une boucle avec compteur qui affichera successivement chaque valeur contenue dans le « tableau » 
+              dans une boite de dialogue.
+            • Vous devez utiliser la valeur d’un compteur comme indice du « tableau » dont vous souhaitez 
+              afficher les valeurs.
+            • Vous devez utiliser une balise <script>, l’attribut d’événement onload, les mots-clés function, 
+              while, la fonction alert. */
+            function countingBoard(){
+                var board = ["un", "deux", "trois", "quatre", "cinq", "six", "sept"];
+
+                var counting = 0; 
+                while(counting < board.length){
+                  alert(board[counting]);
+                  counting++;
+                }
+            }
+            
+    </script>
+</head>
+<body onload="countingBoard()">
+
+    
+
+</body>
+</html>
+
