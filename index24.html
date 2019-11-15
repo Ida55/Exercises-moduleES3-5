@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermédiaire - Exo 5/11</title>
+    <script>
+    
+        /* o Dans l'exercice précédent, deux blocs de code se ressemblent beaucoup. Ce sont les parties du 
+             programme qui permettent d'obliger l'utilisateur à saisir un nombre.
+           o On pourrait donc créer une fonction qui évite d'avoir à écrire à deux reprises des instructions 
+             quasi identiques.
+           o Écrivez cette fonction.
+           o Veillez aux trois points suivants pour l'écriture de cette fonction :
+            • La fonction ne peut pas se terminer tant que l'utilisateur n'a pas saisi de nombre.
+            • La fonction prend en argument le message qui s'affichera à l'utilisateur lors de la saisie.
+            • La fonction retourne le nombre saisi par l'utilisateur. */
+
+    function userInput(){
+
+            var message1 = parseFloat(prompt("Veuillez saisir un 1er nombre"));
+            var message2 = parseFloat(prompt("Veuillez saisir un 2ème nombre"));
+
+            while(isNaN(message1) || isNaN(message2)){
+                message = prompt("Vous devez saisir un 1er nombre");
+                message = prompt("Vous devez saisir un 2ème nombre");
+        }
+        alert(message1 + message2);
+    }
+         
+    </script>
+</head>
+<body onload="userInput()">
+
+</body>
+</html>
+
