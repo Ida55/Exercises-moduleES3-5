@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermédiaire - Exo 2/11</title>
+    <script>
+    
+        /* • Au CHARGEMENT du document, le navigateur Internet affiche une boite de dialogue avec un champ 
+             de saisie à l'utilisateur.
+             PUIS, utilisez la fonction parseFloat pour transformer la saisie de l’utilisateur. Affichez le 
+             résultat de la transformation dans une boite de dialogue. 
+           • Vous devez utiliser une balise <script>, l’attribut d’événement onload, le mot-clé function, 
+             les fonctions alert, prompt et parseFloat. */
+            
+            function changedInput(){
+                var message = parseFloat(prompt("Veuillez saisir un message"));
+
+                alert(message);
+            }
+                
+    </script>
+</head>
+<body onload="changedInput()">
+
+</body>
+</html>
+
