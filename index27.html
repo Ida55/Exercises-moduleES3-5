@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermédiaire - Exo 8/11</title>
+    <script>
+    
+    /* o Ecrivez le programme (algorithme) suivant: Quand l'utilisateur CLIQUE sur le 1er paragraphe, 
+         le navigateur Internet affiche une boite de dialogue avec un champ de saisie à l'utilisateur.
+         L'utilisateur doit impérativement saisir une chaine de caractère.
+         Cette chaine de caractère doit ensuite être utilisée pour ouvrir une nouvelle fenêtre à 
+         l'aide de la fonction open. */
+
+      function openWindow(){
+          var message = prompt("Veuillez indiquez un message de votre choix");
+
+          if(message){
+            open("http://google.com", "Google", "directories=yes, location=yes, resizable=no");
+          } 
+      }   
+               
+    </script>
+</head>
+<body>
+
+    <h1 onclick="openWindow()">Pour accéder à Google</h1>
+
+</body>
+</html>
