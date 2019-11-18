@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermédiaire - Exo 7/11</title>
+    <script>
+    
+    /* • Quand l’utilisateur CLIQUE sur le 1er titre, le navigateur Internet ouvre une fenêtre vers Google.
+       • Quand l’utilisateur CLIQUE sur le 1er paragraphe, le navigateur Internet ouvre une fenêtre vers Bing.
+       • Quand l’utilisateur SURVOLE le 2ème paragraphe, la navigateur Internet ouvre une fenêtre vers 
+         DuckDuckGo. */
+
+         function openGoogle(){
+            open("http://google.com", "Google", "directories=yes, location=yes, resizable=no");
+         }
+
+         function openBing(){
+            open("http://bing.com", "Bing", "directories=yes, location=yes, resizable=no");
+         }
+
+         function openDuckDuckGo(){
+            open("http://duckduckgo.com", "Bing", "directories=yes, location=yes, resizable=no");
+         }
+         
+    </script>
+</head>
+<body>
+
+    <h1 onclick="openGoogle()">Accéder à Google.com</h1>
+    <p onclick="openBing()">Accéder à Bing.com</p>
+    <p onmouseover="openDuckDuckGo()">Accéder à DuckDuckGo.com</p>
+
+</body>
+</html>
