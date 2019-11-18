@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermédiaire - Exo 6/11</title>
+    <script>
+    
+    /* • Au CHARGEMENT du document, obligez 4 fois l'utilisateur à saisir du texte. Assignez chaque 
+         saisie à un indice d’un « tableau ». Enfin, affichez les différentes valeurs saisies à l’aide 
+         de boites de dialogue.
+       • Vous devez utiliser une balise <script>, l’attribut d’événement onload, les mots-clés function, 
+         for while et les fonctions alert et prompt. */
+
+        // BOUCLE WHILE
+            function fourInputs() {
+                var board = [];
+                var i = 0;
+
+                while(i < 4){
+                    var message = prompt("Veuillez saisir un message");
+                    board[i] = message;
+                    i++;
+                }
+                alert(board);
+            }
+        /* BOUCLE FOR
+            function fourInputs(){
+
+                var board = [];
+
+                for(var i= 0; i < 4; i++){
+                    var message = prompt("Veuillez saisir un message");
+                    board[i] = message;
+                }
+                alert(board);
+            } */
+
+        /* FIRST CODE (THAT DID NOT WORK)
+            function fourInputs() {
+
+                var board = [" ", " ", " ", " "];
+                var i = 0;
+
+                while(i < board.length){
+                    var message = prompt("Veuillez saisir un message");
+                    board[i];
+                    i++;
+                }
+              alert(board[0] + board[1] + board[2] + board[3]);
+        } */
+         
+    </script>
+</head>
+<body onload="fourInputs()">
+
+</body>
+</html>
+
