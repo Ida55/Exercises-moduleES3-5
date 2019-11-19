@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermédiaire - Exo 10/11</title>
+    <script>
+    
+    /* • Quand l'utilisateur CLIQUE sur le 1er paragraphe, le navigateur Internet affiche une boite de 
+         dialogue pour lui demander s’il souhaite ouvrir une fenêtre vers Google.
+         SI il clique sur « OK », le navigateur Internet ouvre une nouvelle fenêtre vers Google.
+         SINON le navigateur Internet affiche une boite de dialogue avec un champ de saisie contenant le 
+         texte : « Veuillez saisir l'URL d'un site alternatif ».
+       • SI l'utilisateur saisit un texte, ce texte est utilisé comme URL pour ouvrir une nouvelle fenêtre.
+       • SINON un message s'affiche dans une boite de dialogue avec le texte: « Tant pis ! » et l’utilisateur 
+         est « renvoyé » à l’étape 1.
+         En bref, il s'agit de créer une boucle qui OBLIGE l'utilisateur à ouvrir une nouvelle fenêtre vers 
+         google ou un site alternatif de son choix. */
+
+
+         function getToUrls(){
+            
+            var getToGoogle = confirm("Would you like to visit Google?");
+
+            if(getToGoogle){
+                open("http://google.com", "Google");
+            } else {
+                var saisie = prompt("Veuillez saisir l'url d'un site alternatif");
+                if(saisie){
+                    var lien = "http://www." + saisie + ".com"
+                    open(lien);
+                } else {
+                        alert("Tant pis !");
+                        getToUrls();
+                        }
+                     }                         
+                  }  
+
+        //  CODE INITIAL
+         /* function getToUrls(){
+            
+            var getToGoogle = confirm("Would you like to visit Google?");
+
+            if(getToGoogle){
+                open("http://google.com", "Google");
+            } else {
+                var saisie = prompt("Veuillez saisir l'url d'un site alternatif");
+                if(saisie){
+                    open(saisie);
+                } else {
+                        alert("Tant pis !");
+                        var controller = alert("Tant pis !");
+                        while(controller){
+                            if(getToGoogle){
+                                open("http://google.com", "Google");
+                            } else {
+                                var saisie = prompt("Veuillez saisir l'url d'un site alternatif");
+                                    if(saisie){
+                                        open(saisie);
+                                    } else {
+                                        alert("Tant pis !"); 
+                                    }
+                            }
+                        }                         
+                    }  */
+    </script>
+</head>
+<body>
+    
+    <p onclick="getToUrls()">Veuillez cliquer sur ce texte</p>
+
+</body>
+</html>
