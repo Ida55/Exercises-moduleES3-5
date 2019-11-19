@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermédiaire - Exo 11/11</title>
+    <script>
+    
+    /* o Ecrivez le programme (algorithme) suivant :
+        • Créez un « tableau » contenant 5 URLs.
+        • TANT QUE l'ensemble du « tableau » n'a pas été parcouru, utilisez l'URL contenue à l’indice courant 
+          du « tableau » pour ouvrir une nouvelle fenêtre vers cet URL.
+        • Utilisez une boucle while avec un compteur de tours. */
+
+        function getToWebsites() {
+
+            var urlsBoard = ["http://www.flickr.com", "http://www.tumblr.com", "http://www.shorpy.com", 
+                             "http://www.pinterest.com", "http://www.instagram.com"];
+            var i = 0;
+
+            while(i < urlsBoard.length) {
+                open(urlsBoard[i]);
+                i++;
+            }
+
+        }       
+    
+    </script>
+</head>
+<body onload="getToWebsites()">
+    
+
+
+</body>
+</html>
