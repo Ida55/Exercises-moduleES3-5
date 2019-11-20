@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfectionnement - Exo 1/11</title>
+    <script>
+    
+    /* o En vous inspirant du mécanisme des closures, vous devez créer une fonction qui déclare un «tableau» 
+         et qui retourne ensuite une «sous» fonction qui utilise ce «tableau».
+       o Voici le «tableau»:
+         var mots = [8,"je me lève", 13, "je déjeune", 23, "je vais dormir"]; 
+       o 1ère Partie: Déclarez une fonction qui crée ce tableau et qui retourne une «sous» fonction. 
+       o 2ème Partie: Ecrivez une boucle avec compteur dans la «sous» fonction pour parcourir le «tableau» 
+         et affichez la phrase: "Il est 8h, je me lève. Il est 13h, je déjeune. Il est 23h, je vais dormir."*/
+        
+        var dailyRoutine = function(){
+            var boardCreation = [8,"je me lève", 13, "je déjeune", 23, "je vais dormir"];
+            
+            return function(){
+                var i = 0;
+                while(i < boardCreation.length){
+                    alert("Il est " + boardCreation[i] + "h, " + boardCreation[i+1]);
+                    i = i+2;
+            }
+          }
+        }
+
+        var routine = dailyRoutine();
+        console.log(routine());
+
+    </script>
+</head>
+<body>
+    
+
+
+</body>
+</html>
