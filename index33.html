@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfectionnement - Exo 3/11</title>
+    <script>
+    
+    /* o Vous réalisez le programme suivant :
+         Demandez à l’utilisateur de saisir un nombre. TANT QUE il saisit un nombre, demandez-lui de saisir 
+         un autre nombre. Chaque valeur fournie par l’utilisateur doit être ajoutée dans un « tableau ».
+         Quand l’utilisateur cesse de saisir des nombres ou annule, le programme utilise la fonction créée 
+         lors de l’exercice précédent pour afficher la moyenne des nombre saisis. */
+
+        function userInput() {
+
+            var input = [];
+
+            for(i = 0; i < 4; i++){
+                var question = prompt("Veuillez saisir un nombre");
+                input[i] = question;       
+            }
+            return (input[0] + input[1] + input[2] + input[3]) / 2;  
+       }
+
+       alert(userInput());
+       
+    </script>
+</head>
+<body>
+    
+
+</body>
+</html>
