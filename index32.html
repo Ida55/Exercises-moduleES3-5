@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfectionnement - Exo 2/11</title>
+    <script>
+    
+    /* o 1ère Partie : Créez une fonction acceptant un nombre variable de paramètres en entrée. Cette 
+         fonction calcule la moyenne des valeurs passées en entrée. Pour ce faire vous allez devoir écrire 
+         une boucle qui va additionner une à une chaque valeur du tableau et diviser le total par 2. Cette 
+         fonction retourne la valeur calculée. */
+
+
+        function calcul(num1, num2, num3, num4) {
+
+            for(i = 0; i < arguments.length; i++) {
+                return (arguments[0] + arguments[1] + arguments[2] + arguments[3]) / 2;
+            }
+        }
+
+        alert(calcul(1, 2, 3, 4));
+
+
+
+    /* o 2ème Partie : Exécutez cette fonction avec 3 paramètres en entrée et affichez le résultat dans 
+         une boite de dialogue. Même opération avec 5 paramètres. Même opération avec 10 paramètres. */     
+        
+         function calcul3Param(num1, num2, num3){
+
+            var i = 0;
+
+            while(i < arguments.length ) {
+                return (arguments[0] + arguments[1] + arguments[2]) / 2;
+            }
+        }
+
+         alert(calcul3Param(24, 2, 54));
+
+         function calcul5Param(num1, num2, num3, num4, num5){
+
+            var i = 0;
+
+            while(i < arguments.length ) {
+                return (arguments[0] + arguments[1] + arguments[2] + arguments[3] + arguments[4]) / 2;
+            }
+        }
+
+         alert(calcul5Param(532, 56, 84, 67, 23));
+
+         function calcul10Param(num1, num2, num3, num4, num5, num6, num7, num8, num9, num10){
+
+            var i = 0;
+
+            while(i < arguments.length ) {
+                return (arguments[0] + arguments[1] + arguments[2] + arguments[3] + arguments[4] + 
+                        arguments[5] + arguments[6] + arguments[7] + arguments[8] + arguments[9]) / 2;
+            }
+        }
+
+         alert(calcul10Param(63, 7387, 75 , 42, 87, 88, 52, 78, 12, 57));
+
+
+       
+    </script>
+</head>
+<body>
+    
+
+
+</body>
+</html>
