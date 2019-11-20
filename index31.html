@@ -15,9 +15,10 @@
        o 2ème Partie: Ecrivez une boucle avec compteur dans la «sous» fonction pour parcourir le «tableau» 
          et affichez la phrase: "Il est 8h, je me lève. Il est 13h, je déjeune. Il est 23h, je vais dormir."*/
         
+       
         var dailyRoutine = function(){
             var boardCreation = [8,"je me lève", 13, "je déjeune", 23, "je vais dormir"];
-            
+
             return function(){
                 var i = 0;
                 while(i < boardCreation.length){
@@ -26,6 +27,25 @@
             }
           }
         }
+
+        var routine = dailyRoutine();
+        console.log(routine());
+
+
+
+        // CODE INITIAL
+
+        /* var dailyRoutine = function(){
+            var boardCreation = [8,"je me lève", 13, "je déjeune", 23, "je vais dormir"];
+            
+            return function(){
+                var i = 0;
+                while(i < boardCreation.length){
+                    alert("Il est " + boardCreation[i] + "h, " + boardCreation[i+1]);
+                    i++;
+            }
+          }
+        } */
 
         var routine = dailyRoutine();
         console.log(routine());
