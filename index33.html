@@ -14,17 +14,16 @@
          lors de l’exercice précédent pour afficher la moyenne des nombre saisis. */
 
         function userInput() {
-
             var input = [];
 
             for(i = 0; i < 4; i++){
-                var question = prompt("Veuillez saisir un nombre");
+                var question = parseFloat(prompt("Veuillez saisir un nombre"));
                 input[i] = question;       
             }
             return (input[0] + input[1] + input[2] + input[3]) / 2;  
        }
 
-       alert(userInput());
+        alert(userInput());
        
     </script>
 </head>
