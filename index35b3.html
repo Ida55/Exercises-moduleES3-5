@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfectionnement - Exo 5/11 - 2ème partie</title>
+    <script>
+
+    /* o 2ème Partie : Créez 5 documents Web.
+        • Au chargement du 1er document Web, affichez un Pop-Up vers le 2ème document Web ;
+        • Juste avant la fermeture du 2ème document Web, déclencher l'apparition d'une Pop-Up vers le 3ème.
+        • Juste avant la fermeture du 3ème document Web, déclencher l'apparition d'une Pop-Up vers le 4ème.
+        • Juste avant la fermeture du 4ème document Web, déclencher l'apparition d'une Pop-Up vers le 5ème.
+        • Juste avant la fermeture du 5ème document Web, déclencher l'apparition d'une Pop-Up vers le 1er.
+        • Juste avant la fermeture du 1er, déclenchez l'apparition des 5 Pop-Ups d'un coup !!! */
+
+        function openDoc4AtClosing(){
+            open("./index35b4.html");
+        }
+
+    </script>
+</head>
+<body onbeforeunload="openDoc4AtClosing()">
+
+    <h1>DOC 3</h1>
+
+</body>
+</html>
