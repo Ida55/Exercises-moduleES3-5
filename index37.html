@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfectionnement - Exo 7/11 </title>
+    <script>
+
+    /*  o Reprenez le programme de l’exercice précédent en utilisant un bloc d’instructions
+switch plutôt que if/else. */
+
+    function usersDob() {
+
+        var question= parseInt(prompt("A quel chiffre correspond votre jour de naissance ? (entre 1 et 7)"));
+
+        switch(question){
+            case 1:
+                alert("Lundi représente la lune");
+            break;
+            case 2:
+            case 3:
+            case 4:
+                alert("Mardi est le jour du Feu,  Mercredi représente l'Eau, Jeudi est associé au Bois")
+            break;
+            case 5:
+                alert("Vendredi est égal au Métal");
+            break; 
+            case 6:
+            case 7:
+                alert("Samedi est le jour de la Terre, Dimanche est celui du soleil");
+            break;
+            default: 
+                alert("Ce chiffre ne correspond pas à un jour de la semaine");
+        }
+    }
+    </script>
+
+</head>
+<body onload="usersDob()">
+
+</body>
+</html>
