@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfectionnement - Exo 4/11 - 3ème partie</title>
+    <script>
+
+    /* o 3ème Partie : Quand l’utilisateur clique sur un paragraphe déclenchez l’apparition d’une boite de 
+    dialogue toutes les secondes. Et, quand l’utilisateur clique sur un autre paragraphe arrêtez l’apparition 
+    périodique de cette boite de dialogue. Dans la fonction qui arrête l’apparition périodique vous devrez 
+    avoir accès à la variable qui contient l’identifiant d’apparition périodique. Pour ce faire vous devrez 
+    créer une variable dans l’espace mémoire global. */
+
+        var globalAccess = setInterval(everySeconds, 10000);
+
+        function everySeconds(){
+                alert("Nuisance alert")
+        }
+
+        function stopIt(){
+            clearInterval(globalAccess);
+        }
+       
+    </script>
+</head>
+<body>
+    
+    <p onclick="everySeconds()">PARAGRAPHE 1</p>
+
+    <p onclick="stopIt()">PARAGRAPHE 2</p>
+
+</body>
+</html>
