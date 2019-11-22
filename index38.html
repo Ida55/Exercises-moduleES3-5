@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfectionnement - Exo 8/11 </title>
+    <script>
+
+    /* o Créez une fonction qui retourne le nombre de digits d’un nombre entier passé en argument. Un 
+         «digit» est un des chiffres qui compose le nombre. Par exemple : pour 101, les digits sont 1, 0 et 1. 
+         Il y’a donc 3 digits.
+       o Pour vous aider : essayez de compter le nombre de divisions par 10 nécessaires avant que le nombre 
+         soit inférieur à 0. */
+
+        function numbersOfDigits(num){
+            // return Array.from(num.toString());
+            var tableauDeNombre = Array.from(num.toString());
+            return tableauDeNombre.length;
+        }
+
+        alert(numbersOfDigits(3223434));
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
