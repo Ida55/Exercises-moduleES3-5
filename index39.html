@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfectionnement - Exo 9/11 </title>
+    <script>
+
+    /* o Créez une fonction qui prend en paramètre un « tableau » contenant des valeurs numériques. Cette 
+         fonction trie le tableau par ordre croissant. Cette fonction doit pouvoir accepter un tableau de 
+         n’importe quelle taille.
+       o Par exemple : [5, 8, 13, 2] doit donner [2, 5, 8, 13]
+       o Vous ne devez pas utiliser de notions qui n’ont pas été étudiées dans cette partie des exercices 
+       (comme par exemple la méthode .sort). */
+
+
+        function boardSorting(array){
+            var done = false;
+            while (!done) {
+            done = true;
+            for (var i = 1; i < array.length; i++) {
+                if (array[i - 1] > array[i]) { // à chaque itération si la valeur de array[i - 1] (-> le nombre situé avant array[i]) est supérieur à la valeur de array[i] (-> l'array en cours)
+                done = false; // la boucle while (et donc les instructions qu'elle contient) s'arrête (son booléen n'étant plus valide puisqu'on passe de true à false -> l'état initial)
+                // var tmp = array[i - 1]; // déclaration de la variable tmp à laquelle est assignée l'array[i - 1] (dont la valeur sera supérieure à celle de l'array[i])
+                // array[i - 1] = array[i]; // 1 switch a lieu puisque l'array[i - 1] qui se trouvait en position postérieure de array[i] prend la place de array[i]
+                // array[i] = tmp; // switch inverse le nombre qui se trouvait array[i] prends la place de la valeur stockée dans array[i - 1]
+                [array[i - 1], array[i]] = [array[i], array[i - 1]]; // refactoring des lignes 25, 26, 27
+             }
+           }
+         }
+        return array;
+       }
+
+        var numbers = [12, 10, 15, 11, 14, 13, 16];
+        alert(boardSorting(numbers));
+
+    /* Sans la boucle while (et donc en utilisant uniquement la boucle for) l'output du code serait -> 
+       [10, 12, 11, 14, 13, 15, 16] 
+
+      Je ne comprends pas comment la boucle while recommence jusqu'a ce que le tri soit correctement éffectué
+      à quel moment on a instruit à l'ordi dans ce code qu' il faudra revenir de nouveau dans le tableau et 
+      répéter l'éxécution des instructions de la boucle for jusqu'à ce que le tableau soit complètement trié 
+      dans l'ordre croissant ? */
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
