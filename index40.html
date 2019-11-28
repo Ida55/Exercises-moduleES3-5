@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfectionnement - Exo 10/11 </title>
+    <script>
+
+    /* Vous devez réaliser une fonction qui teste si une année donnée par l’utilisateur est bissextile. 
+        o Il est possible de faire des tests successifs, ou bien de créer des conditions complexes pour ne faire 
+        qu’un seul test. 
+        o L'opérateur % permet de calculer le reste des divisions entières successives du premier opérande par 
+        le second (Par exemple : 10%2 donne 0, 10%3 donne 1 */
+
+
+        function findOutLeapYear(year) {
+
+            if(year%4 == 0 && year%100 != 0 || year%100 == 0) {
+                return year + " is a leap year!";
+            } else {
+                return "Not a leap year!";
+            }
+        }
+
+        alert(findOutLeapYear(1904));
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
