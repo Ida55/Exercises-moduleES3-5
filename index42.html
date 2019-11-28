@@ -27,12 +27,7 @@
             alert("A votre avis que suis-je ?");
         } 
     }; 
-       o VOUS NE DEVEZ PAS MODIFIER CETTE DECLARATION EN REPONDANT AUX QUESTIONS QUI SUIVENT. 
-       o Quelle est la taille du schmilblick ? Affichez dans une boite de dialogue la taille du schmilblick. 
-       o Quelle est la matière dont est composé le schmilblick ? Affichez dans une boite de dialogue la matière du 
-         schmilblick. 
-       o Quelle est la superficie du schmilblick ? Affichez dans une boite de dialogue la superficie du schmilblick 
-         (largeur x longueur). */
+       o VOUS NE DEVEZ PAS MODIFIER CETTE DECLARATION EN REPONDANT AUX QUESTIONS QUI SUIVENT. */
 
     var schmilblick = {
         taille:"grand",  
@@ -54,11 +49,40 @@
         }
     };
 
+// o Quelle est la taille du schmilblick ? Affichez dans une boite de dialogue la taille du schmilblick. 
         alert(schmilblick.taille);
 
+/* o Quelle est la matière dont est composé le schmilblick ? Affichez dans une boite de dialogue la matière du 
+     schmilblick. */
         alert(schmilblick.matiere);
-         
+
+/* o Quelle est la superficie du schmilblick ? Affichez dans une boite de dialogue la superficie du schmilblick 
+     (largeur x longueur). */       
         alert(schmilblick.dimensions.largeur * schmilblick.dimensions.longueur);
+
+/* o De quel couleur est le schmilblick ? Affichez successivement dans des boites de dialogue les différentes 
+     couleurs du schmilblick.  1ère BOUCLE FOR QUE J'AI FAITE VRAIMENT TOUTE SEULE SANS AIDE LE 28.11.19 (pourvu que ça dure) !!!!!!!!*/
+
+        for(var i = 0; i < schmilblick.couleurs.length; i++) {
+            alert(schmilblick.couleurs[i]);
+        }
+
+/* o Le schmilblick peut voler! Changez la valeur de la propriété peutVoler du schmilblick (sans modifier la 
+     déclaration). */
+
+        schmilblick.peutVoler = true;
+        alert(schmilblick.peutVoler);
+
+/* o Le schmilblick est magique ! Ajoutez une propriété estMagique au schmilblick avec comme valeur true 
+   (sans modifier la déclaration). */
+
+        schmilblick.estMagique = true;
+        alert(schmilblick.estMagique);
+
+/* o Exécutez la méthode queSuisJe du schmilblick. */
+
+        schmilblick.queSuisJe();
+
 
     </script>
 
