@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Les Objets - Exo 3/8 </title>
+    <script>
+
+    /* o 1ère Partie : 
+        • Dans les exercices de syntaxe et d’algorithmie, vous avez créé plusieurs fonctions. Vous devez regrouper 
+          toutes ces fonctions (au moins 5 d’entre elles) dans un objet littéral. Déclarez un objet dans lequel chaque 
+          propriété contiendra une fonction parmi celles créées précédemment. 
+        • Exécutez chacune des méthodes créées dans cet objet pour les tester.  */
+
+      var objetLitteral1 = {
+
+            mixerDesNombres: function(a, b, c){
+              if("number" === typeof a && "number" === typeof b && "number" === typeof c){
+                  var d = (a * b) + c; 
+                  alert(d); 
+                  return d;
+                } else {
+                  alert("Les types de données fournis sont incorrects!");
+                };    
+            },     
+          mixerDesChaines: function(i, j){
+              if("string" === typeof i && "string" === typeof j){
+                  var k = "Bonjour " + i + j + "!";
+                  alert(k);             
+                  return k; 
+               } else {
+                 alert("Les types de données fournis sont incorrects!");
+               };    
+           },     
+          mixerDesBooleens: function(x, y, z){
+             if("boolean" === typeof x && "boolean" === typeof y && "boolean" === typeof z){
+                 var message = "";
+                 if(x && y && z){ 
+                   message = "Tout est vrai !";
+                   } else {
+                   message = "Au moins un argument n'est pas vrai!";             
+                };             
+                alert(message);             
+                return message;       
+            } else {             
+                alert("Les types de données fournis sont incorrects!");
+                };     
+           },     
+           mixerDesFonctions: function(z, w){         
+             if("function" === typeof z && "function" === typeof w){             
+                 z();             
+                 w();             
+                 alert("Bravo! Les types de données fournis sont corrects.");         
+            } else {             
+                alert("Les types de données fournis sont incorrects!");         
+            };     
+        },     
+           mixerDeTout: function(k, l, m, n){         
+             if("string" === typeof k && "object" === typeof l && "function" === typeof m && "number" === typeof n){ 
+                alert("Voici un message : " + k);             
+                alert("Voici un message trouvé dans un objet : " + l.message);             
+                m();             
+                alert("Mais ceci est un nombre : " + n);             
+                return n;         
+            } else {             
+                alert("Les types de données fournis sont incorrects!");         
+            };     
+        }    
+      }
+
+    objetLitteral1.mixerDesNombres(2, 10, 5);  
+
+    objetLitteral1.mixerDesChaines("Jane", " Doe");
+
+    objetLitteral1.mixerDesBooleens(true, true, true);
+
+    objetLitteral1.mixerDesFonctions(function foo1(){return "What is the "}, function foo2(){return "answer?"});
+
+    objetLitteral1.mixerDeTout("La date du jour est: ", dateDuJour={message: "le 29/11/2019"}, function foo(){return "C'est bientôt le mois de décembre!"}, 29112019);
+
+
+    /*  o 2ème Partie :  
+      • Déclarez 1 objet littéral qui contient : 
+        • 1 propriété qui contient une méthode : 
+            o qui prend en argument 1 nombre ; 
+            o qui affiche ce nombre dans une boîte de dialogue ; 
+            o qui RETOURNE ce nombre multiplié par 100. 
+        • Exécutez cette méthode et AFFICHEZ la VALEUR DE RETOUR dans une boîte de dialogue. 
+        • 1 propriété qui contient une méthode : 
+            o qui prend en argument 1 texte ; 
+            o qui affiche ce texte dans une boîte de dialogue ; 
+            o qui RETOURNE ce texte concaténé avec la chaîne de caractère "hello !". 
+        • Exécutez cette méthode et AFFICHEZ la VALEUR DE RETOUR dans une boîte de dialogue. 
+        • 1 propriété qui contient une méthode : 
+            o qui prend en argument un tableau de 3 indices ; 
+            o qui affiche le contenu à l'indice 1 
+            o qui remplace ce que contient l'indice 1 par ce qui est contenu à l’indice 2. 
+            o qui RETOURNE ce tableau de 3 indices modifié. 
+        • Exécutez cette méthode et AFFICHEZ la valeur du 2ème indice de la VALEUR DE RETOUR dans une boîte de 
+          dialogue. 
+        • 1 propriété qui contient une méthode : 
+            o qui prend en argument un objet de 5 propriétés qui contiennent chacune un nombre ; 
+            o qui met dans la 4ème propriété la somme de chacun des nombre de chacune des propriétés. 
+            o qui RETOURNE 1 objet de 5 propriétés. 
+        • Exécutez cette méthode et AFFICHEZ la valeur de la 4ème propriété de la VALEUR DE RETOUR dans une 
+          boîte de dialogue. */
+
+
+    var objetLitteral2 = {
+        
+        casDeFigure1: function(num){
+            return alert(num * 100)
+        },
+
+        casDeFigure2: function(text){
+            return alert("hello ! " + text);
+        },
+
+        casDeFigure3: function(a){
+                alert(a[1]);
+                // var tmp = a[1];
+                // a[1] = a[2];
+                // a[2] = tmp
+                [a[1], a[2]] = [a[2], a[1]];
+                return alert(a);
+        },
+
+        casDeFigure4: function(num){
+            return num.d;
+        }
+    }
+
+    objetLitteral2.casDeFigure1(24);
+
+    objetLitteral2.casDeFigure2("Jane Doe");
+
+    objetLitteral2.casDeFigure3([1,2,3]);
+
+    objetLitteral2.casDeFigure4(manyObject={a: 1, b:4, c:11, d: 1+4+11+55, e:55});
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+ 
+
