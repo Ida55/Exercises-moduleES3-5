@@ -35,9 +35,6 @@
     /* 5ème Partie : Changez la propriété de présence du 2ème élève de la liste d'élèves de la classe sans 
        toucher à la déclaration. */
 
-
-
-
             var historyClass = {
                 numberOf: 4,
                 course: "history",
@@ -86,6 +83,13 @@
             • POUR CHAQUE élève dans la classe, AFFICHEZ dans une boite de dialogue le message 
               (où X et Y sont les prénoms et noms de l'élève considéré) : "Je suis X Y et je suis présent ". */
 
+
+        function studentLoop(){
+            
+            for(var i=0; i < historyClass.student.length; i++) {
+                alert("I am " + historyClass.student.lastName + '  ' + historyClass.student.firstName + " et je suis présent")
+            }
+        }
 
 
     /* o 7ème Partie : Assurez-vous que les booléens de présence des élèves ne sont pas tous les mêmes. 
