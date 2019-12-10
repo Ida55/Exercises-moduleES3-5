@@ -59,7 +59,7 @@
                     },
                     {   id: "student3",
                         lastName: "LaHeist",
-                        firstname: "Patty",
+                        firstName: "Patty",
                         age: 20,
                         attendance: true
                     }]
@@ -83,12 +83,71 @@
 
         console.log(studentLoop());
 
-    /*  o 7ème Partie : Assurez-vous que les booléens de présepnce des élèves ne sont pas tous les mêmes. 
+    /*  o 7ème Partie : Assurez-vous que les booléens de présence des élèves ne sont pas tous les mêmes. 
            Réalisez l'algorithme suivant :  
             • POUR CHAQUE élève dans la classe, SI sa propriété présence est vraie, 
-              AFFICHEZ dans une boite de dialogue le message (où X et Y sont les prénoms et noms de l'élève considéré) : 
-              "Je suis X Y et je suis présent".   */
+              AFFICHEZ dans une boite de dialogue le message (où X et Y sont les prénoms et noms de l'élève 
+              considéré) : 
+              "Je suis X Y et je suis présent". */
+
+
+              var historyClass2 = {
+                numberOf: 4,
+                course: "history",
+                teacher: {
+                    lastName: "Aguiré",
+                    firstName: "Mario",
+                    age: 32,
+                    subject: "history",
+                    attendance: true,
+                },
+                student: [{   id: "student1",
+                        lastName: "Jeep",
+                        firstName: "Gary-stu",
+                        age: 19,
+                        attendance: true
+                    },
+                    {   id: "student2",
+                        lastName: "Perrera",
+                        firstName: "José",
+                        age: 20,
+                        attendance: false
+                    },
+                    {   id: "student3",
+                        lastName: "Baddy",
+                        firstName: "Tori",
+                        age: 20,
+                        attendance: false
+                    },
+                    {   id: "student4",
+                        lastName: "Hora",
+                        firstName: "Sonia",
+                        age: 18,
+                        attendance: false
+                    },
+                    {   id: "student5",
+                        lastName: "Truce",
+                        firstName: "Kelly",
+                        age: 19,
+                        attendance: true
+                    }]
+            }
+      
+
+        function attendanceChecking(){
+        
+            for(var i=0; i < historyClass2.student.length; i++) {
+                if(historyClass2.student[i].attendance){
+                    alert("Je suis " + historyClass2.student[i].firstName + ' ' + 
+                    historyClass2.student[i].lastName + " et je suis présent(e)");
+                } else {
+                    alert(historyClass2.student[i].firstName + ' ' + 
+                    historyClass2.student[i].lastName + " est absent(e)");
+                }
+            }
+        }
        
+       console.log(attendanceChecking());
     </script>
 
 </head>
