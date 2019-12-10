@@ -18,22 +18,22 @@
           Il a 1 propriété : son numéro, sa spécialité, son enseignant. 
             • Son numéro est un nombre ; 
             • Sa spécialité est une chaîne de caractères ;
-            • Son enseignant est un objet représentant un enseignant.    */
+            • Son enseignant est un objet représentant un enseignant. */
 
      /*  o 3ème Partie : Créez 3 objets littéraux. Ces objets représentent des élèves. 
-          Chaque élève a 4 propriétés : son nom, son prénom, son âge, sa présence. 
+           Chaque élève a 4 propriétés : son nom, son prénom, son âge, sa présence. 
             • Son âge est un nombre ; 
             • Sa présence est un booléen ; 
             • Son nom est une chaîne de caractères ; 
-            • Son prénom est une chaîne de caractères.  */
+            • Son prénom est une chaîne de caractères. */
 
-    /*  o 4ème Partie : Ajoutez une nouvelle propriété dans l'objet représentant la classe. Cette propriété 
-          contiendra les élèves. Elle devra contenir les 3 références vers les 3 objets représentant chacun 
-          des 3 élèves. 
-            • Les élèves est un objet de type « tableau ».   */
+    /*  o  4ème Partie : Ajoutez une nouvelle propriété dans l'objet représentant la classe. Cette propriété 
+           contiendra les élèves. Elle devra contenir les 3 références vers les 3 objets représentant chacun 
+           des 3 élèves. 
+            • Les élèves est un objet de type « tableau ». */
 
-    /* 5ème Partie : Changez la propriété de présence du 2ème élève de la liste d'élèves de la classe sans 
-       toucher à la déclaration. */
+    /*  o  5ème Partie : Changez la propriété de présence du 2ème élève de la liste d'élèves de la classe sans 
+           toucher à la déclaration. */
 
             var historyClass = {
                 numberOf: 4,
@@ -45,9 +45,7 @@
                     subject: "history",
                     attendance: true,
                 },
-                student: [
-
-                    {   id: "student1",
+                student: [{   id: "student1",
                         lastName: "Jeep",
                         firstName: "Mary-Sue",
                         age: 19,
@@ -64,41 +62,33 @@
                         firstname: "Patrice",
                         age: 20,
                         attendance: true
-                    }
-                   
-                ]
-        }
-
+                    }]
+            }
 
        var changedProp = historyClass.student[1].attendance;
-
        changedProp = false;
-
        console.log(changedProp);
    
-
-    
-
-    /* o 6ème Partie : Réalisez l'algorithme suivant :  
+    /*  o 6ème Partie : Réalisez l'algorithme suivant :  
             • POUR CHAQUE élève dans la classe, AFFICHEZ dans une boite de dialogue le message 
               (où X et Y sont les prénoms et noms de l'élève considéré) : "Je suis X Y et je suis présent ". */
 
-
         function studentLoop(){
-            
+
             for(var i=0; i < historyClass.student.length; i++) {
-                alert("I am " + historyClass.student.lastName + '  ' + historyClass.student.firstName + " et je suis présent")
+                return alert("Je suis " + historyClass.student[i].firstName + ' ' + 
+                historyClass.student[i].lastName + " et je suis présent(e)");
             }
         }
 
+        console.log(studentLoop());
 
-    /* o 7ème Partie : Assurez-vous que les booléens de présence des élèves ne sont pas tous les mêmes. 
-         Réalisez l'algorithme suivant :  
+    /*  o 7ème Partie : Assurez-vous que les booléens de présepnce des élèves ne sont pas tous les mêmes. 
+           Réalisez l'algorithme suivant :  
             • POUR CHAQUE élève dans la classe, SI sa propriété présence est vraie, 
               AFFICHEZ dans une boite de dialogue le message (où X et Y sont les prénoms et noms de l'élève considéré) : 
               "Je suis X Y et je suis présent".   */
-    
-      
+       
     </script>
 
 </head>
