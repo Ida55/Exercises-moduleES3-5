@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Les Objets - Exo 6/8 </title>
+    <script>
+
+  /* o 1ère Partie : Créez un objet littéral qui représente un robot. Ce robot a 6 propriétés : un numéro de série, 
+        un nom de modèle, un nom d'usage, une couleur, une matière, une durée de garantie, 
+        un nombre de bonjour et une méthode qui lui permet de dire bonjour à l'aide d'une boite de dialogue. 
+            • Le numéro de série est un nombre ; 
+            • Le numéro de modèle est un nombre ; 
+            • Le nom d'usage est une chaîne de caractère ; 
+            • La couleur est une chaîne de caractère. 
+            • La matière est une chaîne de caractère ; 
+            • La durée de garantie est une chaîne de caractère ; 
+            • Le nombre de bonjour est un nombre (de base on le fixera à 0) ; 
+            • Dire bonjour est une fonction. */
+
+        // var robot = {
+        //     serialNumber: 404,
+        //     modelNumber: 1431,
+        //     useName: "Tootie",
+        //     color: "magenta",
+        //     material: "plastic",
+        //     warranty: "1 year",
+        //     numOfGreetings: 0,
+        //     greeting: function sayHello(){
+        //         alert("Hello human !")
+        //     }
+        // }
+
+        
+ 
+  /* o 2ème Partie : Exécutez la méthode qui permet au robot de dire bonjour. Elle doit entraîner l'affichage d'une 
+       boite de dialogue avec le texte "Bonjour humain !" écrit dedans.  */
+
+        // robot.greeting();
+   
+  
+   /* o 3ème Partie : Modifiez la méthode dire bonjour pour que le robot incrémente le nombre de bonjour de 1 à 
+        chaque fois qu'on exécute la méthode dire bonjour. Vous pouvez utiliser le mot clé this pour accéder à la 
+        propriété nombre de bonjour lorsque vous programmez dans la méthode. */
+
+        var robot = {
+            serialNumber: 404,
+            modelNumber: 1431,
+            useName: "Tootie",
+            color: "magenta",
+            material: "plastic",
+            warranty: "1 year",
+            numOfGreetings: 0,
+            greeting: function sayHello(){
+                
+                alert("Hello human !")
+
+                var i = 0;
+                while(robot.greeting()){
+                    this.robot.numOfGreetings = this.robot.numOfGreetings[i];
+                    i++;
+                }
+            }
+        }    
+    
+
+  
+   /* o 4ème Partie : Exécutez 3 fois de suite la méthode dire bonjour et vérifiez dans l'onglet console de votre 
+        navigateur Internet que la propriété nombre de bonjour de votre robot à bien été modifiée en conséquence. */
+
+
+        robot.greeting();
+
+   /* o 5ème Partie :  Modifiez la méthode dire bonjour pour que le robot affiche une boite de dialogue avec le 
+        texte "Bonjour humain ! Je m'appelle X" ou X est un mot constitué de la concaténation du modèle et du numéro 
+        de série du robot. Vous devez utiliser le mot clé this pour accéder à ses propriétés lorsque vous programmez 
+        dans la méthode.  */
+
+         
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+à
+
+ 
+
