@@ -73,11 +73,14 @@
           function useName() {
         
               for(var i=0; i < shop.length; i++){
-                  return shop[i] + shop[i].modelNum + shop[i].serialNum;
+                  shop[i].industrialName = shop[i].modelNum + ' ' + shop[i].serialNum + i;
               }
           };
 
-          alert(useName());
+          useName();
+
+          alert(shop[1].industrialName);
+
     
     </script>
 
