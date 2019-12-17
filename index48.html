@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Les Objets - Exo 7/8 </title>
+    <script>
+
+/*  Reprenez les 2 déclarations de littéraux suivantes :
+       
+        o VOUS NE DEVEZ PAS MODIFIER CETTE DECLARATION EN REPONDANT AUX QUESTIONS QUI SUIVENT. 
+ 
+        o Les différentes parties sont interdépendantes. Ne commentez pas chaque partie après l’avoir écrite. 
+ 
+*/
+
+
+var monObjet = {
+    e:function(){
+        alert(this.t);
+    }, 
+    r:true, 
+    t:"Ceci est un texte dans un objet"
+}; 
+ 
+var monAutreObjet = {
+     e:[function(){
+         alert("Vous êtes ici !");
+     },true],         
+     r:false,         
+     t:function(){
+         this.y = {
+            e:function(){
+                alert("Ou suis je ? Qui suis je ?");
+            }
+        };           
+        alert("Desormais ma propriété y contient un objet");
+        }       
+}; 
+
+
+/*
+o 1ère Partie : Affichez dans une boite de dialogue le contenu de la propriété r de l’objet référencé dans 
+  la variable monObjet. */
+
+alert(monObjet.r);
+
+/*
+o 2ème Partie : Affichez dans une boite de dialogue le contenu de la propriété r de l’objet référencé dans 
+  la variable monAutreObjet. */ 
+
+alert(monAutreObjet.r);
+
+/*  
+o 3ème Partie : Exécutez la méthode située en première position dans le « tableau » dans la propriété e de 
+  l’objet référencé dans la variable monAutreObjet (si vous réussissez le texte "Vous êtes ici !" devrait 
+  s’afficher). */
+    
+monAutreObjet.e[0]();
+
+/*  
+o 4ème Partie : Mettez l’objet référencé dans la variable monAutreObjet dans une propriété y de l’objet 
+  référencé dans la variable monObjet (Vous allez donc mettre un objet dans une - nouvelle - propriété d’un 
+  autre objet). */
+
+monObjet.y = monAutreObjet;
+
+console.log(monObjet);
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
