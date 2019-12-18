@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Le Prototypage - Exo 1/2 </title>
+    <script>
+
+/* 
+    o 1ère Partie : Créez un objet littéral qui représente un avion Concorde. Cet objet est doté de plusieurs 
+      propriétés : 
+        • Son modèle qui une chaine de caractère au choix ; 
+        • Sa capacité qui est un nombre au choix ; 
+        • Son prix qui est un nombre au choix ; 
+        • Ses passagers qui est un objet « tableau » vide initialement : [] ; 
+        • Son réservoir qui est un nombre fixé : 100 ; 
+        • Sa couleur qui est un objet « tableau » dont le contenu est : ["blanc"]. */
+
+
+var concordeFlight = {
+    model:  "Concorde",
+    capacity: 50,
+    price:   700,
+    passengers: [],
+    tank: 150,
+    color: ["white"]
+}
+
+
+
+/*  o 2ème Partie : Cet objet est l’avion de base tel qu’il est livré. Chaque compagnie aérienne qui achète un 
+      avion le personnalise. Utilisez l'objet fondamental Object pour créer un nouvel avion Airbus à partir de 
+      ce prototype. Ce nouvel avion est vendu à Air France. Vous ajouterez une propriété compagnie qui contiendra 
+      le nom de la compagnie sous la forme d'une chaîne de caractères. */
+
+var airbus = Object.create(concordeFlight);
+
+airbus.model = "Airbus";
+airbus.company = "Air France";
+
+console.log(airbus);
+
+/*  o 3ème Partie : Effectuez la même opération mais pour un avion destiné à British Airways. */
+    
+    
+ 
+
+        
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
