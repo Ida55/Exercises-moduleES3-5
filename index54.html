@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Les Objets Fondamentaux - Exo 3/4 </title>
+    <script>
+
+/* o 1ère Partie : Créez un « tableau » contenant 10 mots qui forment une phrase. Utilisez la méthode .join() des 
+     « tableaux » pour afficher l'ensemble des éléments du tableau sous la forme d'une chaîne de caractères. */ 
+
+        var wordChaining = ["Créez", "un", "tableau", "contenant", "10", "mots", "qui", "forment", "une", "phrase"];
+
+        alert(wordChaining.join(' '));
+     
+/*   o 2ème Partie : Utilisez la méthode .push() pour ajouter 3 mots à la fin du « tableau » et la méthode .shift() 
+     pour retirer les 3 premiers mots du « tableau ». Sauvegardez au fur et à mesure les 3 premiers mots extrait 
+     dans un autre tableau à l'aide de la méthode .push(). */
+
+        wordChaining.push(" Utilisez", " une", "méthode");
+
+        alert(wordChaining);
+
+        var newBoard = [];
+
+        var boardFiller1 = wordChaining.shift();
+
+        newBoard.push(boardFiller1);
+
+        var boardFiller2 = wordChaining.shift();
+
+        newBoard.push(boardFiller2);
+
+        var boardFiller3 = wordChaining.shift();
+
+        newBoard.push(boardFiller3);
+
+        alert(wordChaining);
+   
+/*   o 3ème Partie : Utilisez la méthode .map() pour exécuter une fonction qui met en majuscule (en utilisant la 
+     méthode .toUpperCase() de String) chaque mot du dernier « tableau ». */
+
+     var newBoard2 = newBoard.map(function(modification){
+        return modification.charAt(0).toUpperCase() + modification.slice(1);
+     }) 
+
+     alert(newBoard2);
+         
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
