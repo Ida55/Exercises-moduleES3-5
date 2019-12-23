@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Les Objets Fondamentaux - Exo 4/4 </title>
+    <script>
+
+/* o 1ère Partie : Créez un nouvel objet de type Date dans la mémoire. */
+
+
+var dateObj = new Date();
+
+// console.log(typeof dateObj);
+
+
+
+/* o 2ème Partie : Consultez la liste des méthodes de l'objet construit avec la fonction constructeur Date à 
+     l’adresse fournie. */
+
+
+
+
+
+/* o 3ème Partie : Utilisez l'objet Date créé pour afficher dans une boite de dialogue le nombre d'heures, de 
+     minutes et de secondes avant la fin du cours à 17:00:00.  */ 
+
+var anotherDateObj = new Date('December 23, 2019 17:00:00')
+
+console.log(anotherDateObj);
+
+function howLongTil5(){
+    var something = anotherDateObj - dateObj;
+    
+    return something;
+}
+
+alert(howLongTil5());
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
