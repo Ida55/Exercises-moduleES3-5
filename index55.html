@@ -20,9 +20,6 @@ var dateObj = new Date();
      l’adresse fournie. */
 
 
-
-
-
 /* o 3ème Partie : Utilisez l'objet Date créé pour afficher dans une boite de dialogue le nombre d'heures, de 
      minutes et de secondes avant la fin du cours à 17:00:00.  */ 
 
@@ -33,7 +30,7 @@ var anotherDateObj = new Date('December 23, 2019 18:00:00');
 // console.log(anotherDateObj - dateObj);
 
 function howLongTil5(){
-    var something = anotherDateObj.getTime() - dateObj.getTime()/1000;
+    var something = (anotherDateObj.getTime() - dateObj.getTime())/1000;
 
     var totalSeconds = something;
     var hours = Math.floor(totalSeconds / 3600);
@@ -47,9 +44,7 @@ function howLongTil5(){
 
 alert(howLongTil5());
 
-// *****************************************************************************************************************
 
-// Je n'arrive pas a créer ce qui est demandé dans la 3ème partie de l'exercice
 
 
     </script>
