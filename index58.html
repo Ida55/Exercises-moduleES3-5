@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Le Modèle Objet du Document - Exo 3/23 </title>
+    <script>
+
+    /* 1ère Partie : Affichez dans une boite de dialogue le contenu de la propriété .title de l'objet window.document. */
+
+        console.log(window.document.title);
+
+
+    /* 2ème Partie : Écrivez l'algorithme suivant :  
+        • AU CLIC sur le titre de la première section, on affecte la valeur "Ceci est un nouveau titre" à la propriété .title de l'objet 
+          window.document. */
+
+         function titleChangeOne(){
+
+            var modifyTitleOne = window.document.title
+
+            modifyTitleOne = "Ceci est un nouveau titre"
+
+            alert(modifyTitleOne);
+
+         }
+
+    /* 3ème Partie : Écrivez l'algorithme suivant : 
+        • AU CLIC sur le titre de la deuxième section, SI le titre est "Ceci est un nouveau titre" ALORS affectez le titre initial à la 
+          propriété .title de window.document SINON affectez la valeur "Ceci est un nouveau titre". */
+
+         function titleChangeTwo(){
+
+             if(titleChangeOne()){
+                 alert(window.document.title);
+             } else {
+                 alert("Ceci est un atre nouveau titre");
+             }
+         }
+
+    </script>
+
+</head>
+<body>
+
+    <p onclick="titleChangeOne()">SECTION 1</p>
+
+    <p onclick="titleChangeTwo()">SECTION 2</p>
+
+</body>
+</html>
