@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Le Modèle Objet du Document - Exo 5/23 </title>
+    <script>
+
+    /* 1ère Partie : La méthode .getElementById() de l'objet document prend en argument une chaîne de caractère qui correspond à 
+       l'identifiant d'une balise du document Web. Elle retourne une référence vers l'objet correspondant en mémoire.  Identifiez une 
+       balise du document Web (utilisez l'attribut id). Une fois la balise identifiée, écrivez l'algorithme suivant : 
+        • AU CHARGEMENT du document, récupérez une référence vers l'objet correspondant à la balise identifiée et affichez le contenu 
+          de cet objet dans la console. */
+
+        
+        function gettingTheElementOne(){
+            console.log(document.getElementById("test1"));
+        }
+    
+
+    /* 2ème Partie : Vous savez désormais récupérer une référence à l'objet correspondant à une balise identifiée. Identifiez une autre 
+       balise du document Web (toujours en utilisant l'attribut id). Une fois la balise identifiée, écrivez l'algorithme suivant :  
+        • AU CLIC sur le titre principal, récupérez une référence vers l'objet correspondant à la balise identifiée. Cet objet contient 
+          des propriétés et des méthodes. Affectez à la propriété .innerHTML de l'objet correspondant à la balise la valeur suivante : 
+          "Ce texte est écrit dans cette balise par mon script". */
+
+        function gettingTheElementTwo(){
+            console.log(document.getElementById("test2").innerHTML = "Ce texte est écrit dans cette balise par mon script");
+        }
+    
+    </script>
+
+</head>
+<body onload="gettingTheElementOne()">
+
+    <p id="test1">HELLO WORLD!</p>
+
+    <p id="test2" onclick="gettingTheElementTwo()">BONJOUR MONDE</p>
+
+</body>
+</html>
