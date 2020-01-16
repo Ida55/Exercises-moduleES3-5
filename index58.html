@@ -18,12 +18,9 @@
 
          function titleChangeOne(){
 
-            var modifyTitleOne = window.document.title
+            window.document.title = "Ceci est un nouveau titre";
 
-            modifyTitleOne = "Ceci est un nouveau titre"
-
-            alert(modifyTitleOne);
-
+            return alert(window.document.title);
          }
 
     /* 3ème Partie : Écrivez l'algorithme suivant : 
@@ -32,10 +29,10 @@
 
          function titleChangeTwo(){
 
-             if(titleChangeOne()){
-                 alert(window.document.title);
+             if(window.document.title == "Ceci est un nouveau titre"){
+                window.document.title;
              } else {
-                 alert("Ceci est un atre nouveau titre");
+                 alert( window.document.title = "Ceci est un autre nouveau titre");
              }
          }
 
