@@ -15,26 +15,65 @@
      console.log(window.navigator.appName);
 
 
-     alert(window.navigator.userAgent);
+     console.log(window.navigator.userAgent);
+
 
 /* o 2ème Partie : Utilisez une de ces propriétés pour réaliser l'algorithme suivant :  SI je démarre mon script sur Edge, 
      j'affiche une boite de dialogue avec le texte "So Lame ! " à l'intérieur et j'ouvre une PopUp vers le site de Mozilla Firefox. 
      SINON SI je démarre mon script sur Chrome j'affiche une boite de dialogue avec le texte "Spy On Me !" et j'ouvre une PopUp vers la 
      page wikipédia des navigateurs Web. SINON j'affiche une boite de dialogue avec le texte "Freed from Desire".  
-     
-    Selon ce que donne le userAgent 
-     
      */
 
-    // if(){
+    var edge = 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10136';    
 
-    // } else if(){
+    var firefox = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0'; 
 
-    // } else {
+    var chrome = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36';
+    
+    /*    
+        // Si tu écrit un if, le test consiste à vérifier que ce qui est à l'intérieur des parenthéses est true ou équivalent.
+       //  Ici, si je suis le moteur JS, ce que je comprends c'est : Est-ce que CE que contient la variable edge est true ou équivalent. 
+           Or ici ta variable edge contient un texte donc équivalent true donc on rentre toujours dans la if.
+      //   Le test à faire est de comparer le contenu d'une variable avec le contenu de window.navigator.userAgent qui varie pour 
+           chaque navigateur et d'utiliser le resultat du test dans ta condition. Donc : 
+    */
+    
+    var testDeComparaisonEntreLaValeurDeLaVariableEdgeEtLeUserAgentCourant = edge === window.navigator.userAgent;
+    var testDeComparaisonEntreLaValeurDeLaVariableChromeEtLeUserAgentCourant = chrome === window.navigator.userAgent;
+    
+    // Ces 2 variables contiennent maintenant un boolean (soit true soit false). On peut désormais l'utiliser dans une condition :
+    
+    //if(edge){
+    if(testDeComparaisonEntreLaValeurDeLaVariableEdgeEtLeUserAgentCourant){
+        alert("So Lame !");
+        open("https://www.mozilla.org/fr/");
+    //} else if(chrome){
+    } else if(testDeComparaisonEntreLaValeurDeLaVariableChromeEtLeUserAgentCourant){
+        alert("Spy on Me !")
+    } else {
+        alert("Freed from Desire");
+    }
+    
+    // ou en version simplifiée :
+    /*if(edge === window.navigator.userAgent){
+        alert("So Lame !");
+        open("https://www.mozilla.org/fr/");
+    } else if(chrome === window.navigator.userAgent){
+        alert("Spy on Me !")
+    } else {
+        alert("Freed from Desire");
+    }*/
 
-    // }
 
-  
+    /* MON CODE ORIGINAL (QUI NE FONCTIONNAIT PAS) :
+        if(edge){
+        alert("So Lame !");
+        open("https://www.mozilla.org/fr/");
+    } else if(chrome){
+        alert("Spy on Me !")
+    } else {
+        alert("Freed from Desire");
+    } */
 
     </script>
 
@@ -43,3 +82,6 @@
 
 </body>
 </html>
+    
+
+    
